@@ -1,0 +1,113 @@
+// ------------------
+// Custom
+// ------------------
+//
+//
+// ------------------
+
+// Place slide number in the right
+.slide::after {
+	left: auto;
+	right: 96px;
+}
+
+.slide.no-number::after {
+	content: "";
+}
+
+
+// Image size helper
+
+img.fill.w {
+	width: 100%;
+}
+
+img.fill.h {
+	height: 100%;
+}
+
+
+// Reference
+
+.citation {
+	text-align: right;
+	line-height: 1em;
+
+	p {
+		font-size: 0.5em;
+		line-height: 1.25em;
+		margin: 0 0;
+	}
+	p + p {
+		margin-top: 0.5em;
+	}
+
+	&.left {
+		text-align: left;
+	}
+}
+
+
+// Tighter Elements
+
+.slide.tighter {
+	padding-top: 52px;
+}
+
+
+
+// Two Column Slides
+
+@mixin slide-width($left-percentage) {
+	> .left {
+		width: $left-percentage;
+	}
+	> .right {
+		width: 100% - $left-percentage;
+	}
+}
+
+.slide.twocol {
+	@include slide-width(50%);
+
+	> .left,
+	> .right {
+		float: left;
+	}
+
+	&.l20 {
+		@include slide-width(20%);
+	}
+
+	&.l25 {
+		@include slide-width(25%);
+	}
+
+	&.l35,
+	&.lr {
+		@include slide-width(35%);
+	}
+
+	&.l40 {
+		@include slide-width(40%);
+	}
+
+	&.l60 {
+		@include slide-width(60%);
+	}
+
+	&.l65,
+	&.ll {
+		@include slide-width(65%);
+	}
+
+	&.l75 {
+		@include slide-width(75%);
+	}
+
+	&.l80 {
+		@include slide-width(80%);
+	}
+
+}
+
