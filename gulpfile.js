@@ -11,7 +11,7 @@ const sync = require('browser-sync').create();
 const pkg = require('./package.json');
 const banner = `/**
  * ${ pkg.description }
- * ${ pkg.name } v${ pkg.version }, ${ pkg.homepage }
+ * Modified based on ${ pkg.name } v${ pkg.version }, ${ pkg.homepage }
  * @copyright 2010–${ new Date().getFullYear() } ${ pkg.author.name }, ${ pkg.author.url }
  * @license ${ pkg.license }
  */
