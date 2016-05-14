@@ -1,3 +1,22 @@
+# My Customized theme for Shower
+
+This theme is customized based on the [material theme]. Preview for the custom theme can be viewed at `myindex.html`.
+
+[material theme]: https://github.com/shower/material
+
+
+### Setup
+
+    npm install
+    npm install shower-core
+
+### Start developing
+
+    gulp
+    npm run dev  # the same
+
+- - -
+
 # Material theme for Shower
 
 ![Ribbon screen shot](pictures/canvas.png)
