@@ -26,13 +26,16 @@ gulp.task('default', ['styles'], () => {
 		server: {
 			baseDir: '.',
 			routes: {
-				'/shower-core': '../shower-core'
-			}
+				'/shower-core': './node_modules/shower-core',
+				'/lib': './lib'
+			},
+			index: 'myindex.html'
 		}
 	});
 
 	gulp.watch('styles/**/*.scss', ['styles']);
-	gulp.watch('index.html').on('change', sync.reload);
+	// gulp.watch('index.html').on('change', sync.reload);
+	gulp.watch('myindex.html').on('change', sync.reload);
 });
 
 // Styles
