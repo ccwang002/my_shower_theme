@@ -1,8 +1,15 @@
 // ------------------------------------------------------------------
-// Double
+// Columns
 // ------------------------------------------------------------------
 
+.double,
+.triple {
+	column-gap:48px;
+	hyphens:auto;
+	}
 .double {
-	columns:2;
-	column-gap:75px;
+	column-count:2;
+	}
+.triple {
+	column-count:3;
 	}
