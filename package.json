@@ -1,10 +1,13 @@
 {
-  "name": "shower-material",
+  "name": "@shower/material",
   "description": "Material theme for Shower HTML presentation engine",
-  "version": "1.1.0",
+  "version": "2.2.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "author": {
     "name": "Vadim Makeev",
-    "url": "http://pepelsbey.net/"
+    "url": "https://pepelsbey.net/"
   },
   "homepage": "https://github.com/shower/material",
   "repository": {
@@ -12,7 +15,7 @@
     "url": "git://github.com/shower/material.git"
   },
   "bugs": {
-    "url": "http://github.com/shower/material/issues"
+    "url": "https://github.com/shower/material/issues"
   },
   "license": "MIT",
   "keywords": [
@@ -22,32 +25,20 @@
     "theme"
   ],
   "files": [
-    "docs/**",
     "fonts/**",
-    "images/**",
     "pictures/**",
-    "styles/*.css",
+    "styles/**",
     "index.html",
     "LICENSE.md",
     "README.md"
   ],
   "devDependencies": {
-    "autoprefixer": "^7.1.2",
-    "browser-sync": "^2.14.0",
-    "gulp": "^3.9.1",
-    "gulp-header": "^1.8.8",
-    "gulp-postcss": "^7.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.6.1",
-    "gulp-sass": "^3.0.0",
-    "path-exists-cli": "^1.0.0",
-    "postcss-csso": "^2.0.0",
-    "shower-core": "latest"
+    "live-server": "^1.2.1",
+    "shower-core": "^2.1.0",
+    "stylelint": "^9.10.1"
   },
   "scripts": {
-    "dev": "gulp",
-    "styles": "gulp styles",
-    "prepublish": "npm run styles",
-    "test": "path-exists styles/screen-16x10.css && path-exists styles/screen-4x3.css"
+    "test": "stylelint 'styles/**/*.css'",
+    "start": "live-server . --watch='fonts/*,pictures/*,styles/**,index.html'"
   }
 }
