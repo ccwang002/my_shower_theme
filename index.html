@@ -3,9 +3,9 @@
 <head>
 	<title>Material theme for Shower</title>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="lib/highlight/styles/github.min.css" type="text/css"/>
+	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="shower list">
 
@@ -430,10 +430,10 @@
 		<h2>Plain Code Listing</h2>
 		<pre><code>&lt;html lang="en"&gt;
 <mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span>
-		&lt;title&gt;Shower&lt;/title&gt;
-		&lt;meta charset="<mark class="important">UTF-8</mark>"&gt;
-		&lt;link rel="stylesheet" href="screen.css"&gt;
-		&lt;script src="script.js"&gt;&lt;/script&gt;
+    &lt;title&gt;Shower&lt;/title&gt;
+    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;
+    &lt;link rel="stylesheet" href="screen.css"&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
 <mark>&lt;/head&gt;</mark></code></pre>
 	</section>
 	<section class="slide">
@@ -659,7 +659,12 @@ def order(request):
 	<script src="node_modules/shower-core/shower.min.js"></script>
 	<script src="/lib/highlight/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
 	<script>
-		hljs.initHighlightingOnLoad();
+		// Only highlight code blocks with specified language
+		document.addEventListener('DOMContentLoaded', (event) => {
+			document.querySelectorAll('pre[class^="language"] code').forEach((block) => {
+				hljs.highlightBlock(block);
+			});
+		});
 	</script>
 	<!-- Copyright © 3000 Yours Truly, Famous Inc. -->
 </body>
