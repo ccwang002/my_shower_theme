@@ -592,36 +592,40 @@
 		<h2 class="shout">Custom<br>Layouts</h2>
 	</section>
 
-	<section class="slide twocol l80">
+	<section class="slide tight">
 		<h2>Twocol and citation demo</h2>
-		<div class="left">
-			<figure>
-				<blockquote><p>
-						Django Q is a native Django task queue, scheduler and worker application using Python multiprocessing.
-				</p></blockquote>
-				<figcaption>
-					&mdash; <a href="https://django-q.readthedocs.org/">Django Q documentation</a>
-				</figcaption>
-			</figure>
-		</div>
-		<div class="right">
-			<div class="citation">
-				<img src="pictures/django_q_logo.png" alt="">
-				<p>Ref: <a href="#">Django-Q</a> logo</p>
+		<div class="columns two l80">
+			<div>
+				<figure>
+					<blockquote>
+						<p>Django Q is a native Django task queue, scheduler and worker application using Python multiprocessing.</p>
+					</blockquote>
+					<figcaption>
+						&mdash; <a href="https://django-q.readthedocs.org/">Django Q documentation</a>
+					</figcaption>
+				</figure>
+			</div>
+			<div>
+				<figure>
+					<img src="pictures/django_q_logo.png" alt="">
+					<figcaption class="citation">Ref: <a href="#">Django-Q</a> logo</figcaption>
+				</figure>
 			</div>
 		</div>
 	</section>
 
-	<section class="slide">
-		<h2>Left citation</h2>
-		<div class="citation left">
+	<section class="slide tight">
+		<h2>Left-aligned citation and dense content</h2>
+		<figure>
 			<img class="fill w" src="pictures/EPIC_load_ipy.jpg" alt="">
-			<p>Ref: Left citation with a long description. Django Q is a native Django task queue, scheduler and worker application using Python multiprocessing. Django Q is a native Django task queue, scheduler and worker application using Python multiprocessing.</p>
-			<p>Django Q is a native Django task queue, scheduler and worker application using Python multiprocessing.</p>
-		</div>
+			<figcaption class="citation left">
+				<p>Ref: Left citation with a long description. Django Q is a native Django task queue, scheduler and worker application using Python multiprocessing. Django Q is a native Django task queue, scheduler and worker application using Python <code>multiprocessing</code>.</p>
+				<p>Django Q is a native Django task queue, scheduler and worker application using Python <code>multiprocessing</code>.</p>
+			</figcaption>
+		</figure>
 	</section>
 
-	<section class="slide tighter">
+	<section class="slide tight">
 		<pre class="language-python">
 <code>from django_q.humanhash import humanize
 def order(request):
@@ -636,11 +640,7 @@ def order(request):
 		</pre>
 	</section>
 
-	<section class="slide tighter">
-		<h2>This page content is dense</h2>
-	</section>
-
-	<section class="slide no-number">
+	<section class="slide clear">
 		<h2>This slide has no slide number</h2>
 	</section>
 
@@ -659,7 +659,7 @@ def order(request):
 	<script src="node_modules/shower-core/shower.min.js"></script>
 	<script src="/lib/highlight/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
 	<script>
-		// Only highlight code blocks with specified language
+		// Highlight only the code blocks with specified language
 		document.addEventListener('DOMContentLoaded', (event) => {
 			document.querySelectorAll('pre[class^="language"] code').forEach((block) => {
 				hljs.highlightBlock(block);
