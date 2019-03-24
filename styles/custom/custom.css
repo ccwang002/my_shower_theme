@@ -17,13 +17,20 @@
 /* Citation */
 
 figcaption.citation {
-    text-align: right;
     font-size: 0.8rem;
     line-height: 1rem;
 }
 
 figcaption.citation.left {
     text-align: left;
+}
+
+figcaption.citation.right {
+    text-align: right;
+}
+
+figcaption.citation.center {
+    text-align: center;
 }
 
 figcaption.citation p {
