@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="lib/highlight/styles/github.css" type="text/css"/>
+	<link rel="stylesheet" href="lib/katex/katex.min.css" type="text/css"/>
+	<link rel="stylesheet" href="lib/katex/contrib/copy-tex.min.css" type="text/css"/>
 	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="shower list">
@@ -644,6 +646,17 @@ def order(request):
 		<h2>This slide has no slide number</h2>
 	</section>
 
+	<section class="slide">
+		<h2>Test \(\LaTeX\) rendering by \(\KaTeX\)</h2>
+		<p>Simplified RSEM generative model (copied from <a href="https://ro-che.info/articles/2017-01-29-rsem">Roman's blog</a>).</p>
+		<p>
+			\[\begin{aligned}
+				p(G,S,R|\theta) &=\prod_{n=1}^N p(G_n,S_n,R_n|\theta)\\
+					&=\prod_{n=1}^N p(G_n|\theta)p(S_n|G_n)p(R_n|G_n,S_n).
+			\end{aligned}\]
+		</p>
+	</section>
+
 	<div class="progress"></div>
 
 	<!-- GitHub badge -->
@@ -658,12 +671,18 @@ def order(request):
 
 	<script src="node_modules/shower-core/shower.min.js"></script>
 	<script src="lib/highlight/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+	<script defer src="lib/katex/katex.min.js"></script>
+	<script defer src="lib/katex/contrib/auto-render.min.js"></script>
+	<script defer src="lib/katex/contrib/copy-tex.min.js"></script>
 	<script>
-		// Highlight only the code blocks with specified language
 		document.addEventListener('DOMContentLoaded', (event) => {
+			// Highlight only the code blocks with specified language
 			document.querySelectorAll('pre[class^="language"] code').forEach((block) => {
 				hljs.highlightBlock(block);
 			});
+
+			// Load KaTeX
+			renderMathInElement(document.body);
 		});
 	</script>
 	<!-- Copyright © 3000 Yours Truly, Famous Inc. -->
