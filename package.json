@@ -39,6 +39,14 @@
   },
   "scripts": {
     "test": "stylelint 'styles/**/*.css'",
-    "start": "live-server . --watch='fonts/*,pictures/*,styles/**,index.html'"
+    "start": "live-server . --watch='fonts/*,pictures/*,styles/**,index.html'",
+    "prepare-files": "rsync -a lib fonts pictures styles prepared/",
+    "prepare-showerjs": "rsync -a node_modules/shower-core/shower.min.js prepared/lib/",
+    "prepare-html": "sed 's#node_modules/shower-core/shower\\.min\\.js#lib/shower.min.js#' index.html > prepared/index.html",
+    "prepare": "npm run prepare-files && npm run prepare-showerjs && npm run prepare-html",
+    "publish": "npm run prepare && gh-pages.js -d prepared -m 'Upload slides'"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
   }
 }

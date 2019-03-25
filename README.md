@@ -1,9 +1,13 @@
 # My Customized theme for Shower
-This theme is customized based on the [Shower's material theme][material theme].  It adds code highlighting by Highlight.js and stylings.
-
-[material theme]: https://github.com/shower/material
+This theme is customized based on the [Shower's material theme][material
+theme].  It adds code highlighting by Highlight.js and customized stylings.
+[See it in action][gh-pages].
 
 ![theme screenshot](pictures/canvas.png)
+
+[material theme]: https://github.com/shower/material
+[gh-pages]: https://blog.liang2.tw/my_shower_theme/
+
 
 
 ## How to use this theme
@@ -11,9 +15,20 @@ Clone this repository and install the dependencies:
 
     npm install
 
-Modify the slide content at `index.html`. Live preview the slides by:
+Modify the slides content at `index.html`. Live preview the slides by:
 
     npm start
+
+Export the slides (including libraries under `libs`, fonts under `fonts`, and
+images under `pictures`) to folder `prepared` by:
+
+    npm run prepare
+
+Publish the slides to gh-pages of the same repository by (which automically
+runs the `prepare` command):
+
+    npm run publish
+
 
 
 ## Customize the theme
