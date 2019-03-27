@@ -676,8 +676,12 @@ def order(request):
 	<script defer src="lib/katex/contrib/copy-tex.min.js"></script>
 	<script>
 		document.addEventListener('DOMContentLoaded', (event) => {
+			// Convert tab to be 4 space in the code examples
+			hljs.configure({
+				tabReplace: '    '
+			});
 			// Highlight only the code blocks with specified language
-			document.querySelectorAll('pre[class^="language"] code').forEach((block) => {
+			document.querySelectorAll('pre[class^="lang"] code').forEach((block) => {
 				hljs.highlightBlock(block);
 			});
 
