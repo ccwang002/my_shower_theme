@@ -1,7 +1,7 @@
 {
   "name": "my_shower_theme",
-  "description": "Shower theme based on Material",
-  "version": "2.2.1",
+  "description": "Material theme for Shower HTML presentation engine",
+  "version": "2.5.0",
   "author": {
     "name": "Liang-Bo Wang",
     "url": "https://blog.liang2.tw/"
@@ -30,18 +30,12 @@
     "README.md"
   ],
   "devDependencies": {
-    "live-server": "^1.2.1",
-    "shower-core": "^2.1.0",
-    "stylelint": "^9.10.1",
-    "gh-pages": "^2.0.1"
+    "@shower/core": "^3.2.0",
+    "browser-sync": "^2.27.5",
+    "stylelint": "^13.13.1"
   },
   "scripts": {
     "test": "stylelint 'styles/**/*.css'",
-    "start": "live-server . --watch='fonts/*,pictures/*,styles/**,index.html'",
-    "prepare-files": "rsync -a lib fonts pictures styles prepared/",
-    "prepare-showerjs": "rsync -a node_modules/shower-core/shower.min.js prepared/lib/",
-    "prepare-html": "sed 's#node_modules/shower-core/shower\\.min\\.js#lib/shower.min.js#' index.html > prepared/index.html",
-    "prepare": "npm run prepare-files && npm run prepare-showerjs && npm run prepare-html",
-    "publish": "npm run prepare && gh-pages -d prepared -m 'Upload slides'"
+    "start": "browser-sync start --server --no-notify --no-ui --no-ghost-mode --files 'fonts/*,pictures/*,styles/**,index.html'"
   }
 }
