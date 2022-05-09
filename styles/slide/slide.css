@@ -48,12 +48,12 @@
 
 .slide::after {
     position: absolute;
-    right: 16px;
-    bottom: 38px;
+    right: 1rem;
+    bottom: 1rem;
     left: 0;
     color: var(--color-light);
     line-height: 18px;
-    text-align: center;
+    text-align: right;
     counter-increment: slide;
     content: counter(slide);
 }
