@@ -35,10 +35,3 @@ img.fill.w {
 img.fill.h {
     height: 100%;
 }
-
-
-/* Slide layout */
-
-.slide.tight {
-    padding-top: 47px;
-}
