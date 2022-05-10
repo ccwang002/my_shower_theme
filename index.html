@@ -15,6 +15,15 @@
 			--slide-ratio: calc(16 / 9);
 			--color-key: #008aa5;
 		}
+
+		.slide-notes {
+			max-width: 48em;
+			line-height: 1.75em;
+		}
+
+		.slide-notes pre code {
+			background: none;
+		}
     </style>
 </head>
 <body class="shower list show-notes grid">
@@ -31,12 +40,50 @@
 		<p class="note">Echo Park 8-bit sustainable umami deep v Kickstarter.</p>
 	</section>
 
+	<section class="slide-notes">
+		<h2>Example slide notes</h2>
+		<p>Put some notes or transcript next to the slide by adding a notes section right after the slide section:</p>
+		<pre class="language-html"><code>&lt;section class="slide"&gt; ... &lt;/section&gt;
+&lt;section class="slide-notes"&gt; ... &lt;/section&gt;</code></pre>
+		<p>The default slide notes will have the same height as one slide.
+			Long slide notes will be scrollable.</p>
+	</section>
+
     <section class="slide">
         <h2>First Header</h2>
         <p>Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic.</p>
         <h2>Second Header</h2>
         <p>Whatever authentic disrupt, you probably haven’t heard of them direct trade mlkshk Etsy. Gluten-free roof party plaid four loko quinoa.</p>
     </section>
+
+	<section class="slide-notes" id="slide-notes-styling">
+		<h2>Slide notes style customization</h2>
+		<p>The styling works the same way as the slides:</p>
+		<pre class="language-html">
+<code>&lt;section class="slide-notes" id="my-notes"&gt;
+	&lt;h2&gt;Slide notes style customization&lt;/h2&gt;
+	&lt;style&gt;
+		#my-notes {
+			border: solid 2px var(--color-medium);
+		}
+	&lt;/style&gt;
+&lt;/section&gt;</code></pre>
+
+		<p>Like the slides, slide notes are also a grid item. To make a slide notes span over multiple slides, change its grid settings to span over multiple over rows:</p>
+		<pre class="language-css">
+<code>#my-notes {
+	grid-row-end: span 2;
+}</code></pre>
+		<style>
+			#slide-notes-styling {
+				--border-space: calc(var(--slide-gap) * var(--slide-scale) / 3);
+				margin: 0 calc(var(--border-space) * -1);
+				padding: 0 var(--border-space);
+				grid-row-end: span 2;
+				border: solid 2px var(--color-medium);
+			}
+		</style>
+	</section>
 
 	<section class="slide">
 		<h2><a href="">Linked Header</a></h2>
@@ -109,6 +156,22 @@
 
 	<section class="slide">
 		<h2>Nested Lists</h2>
+		<ol>
+			<li>Literally viral vegan, ugh drinking vinegar photo booth</li>
+			<li>Wes Anderson chillwave Marfa pour-over Etsy banh mi</li>
+			<li>Ethnic polaroid lo-fi iPhone ennui
+				<ul>
+					<li>Yr wayfarers before they sold out Kickstarter asymmetrical</li>
+					<li>Irony flexitarian readymade quinoa, kogi bespoke meggings narwhal</li>
+					<li>Skateboard Etsy twee artisan Echo Park</li>
+				</ul>
+			</li>
+			<li>Tonx kitsch fingerstache readymade, retro single-origin coffee</li>
+		</ol>
+	</section>
+
+	<section class="slide-notes">
+		<h2>Nested list in slide notes</h2>
 		<ol>
 			<li>Literally viral vegan, ugh drinking vinegar photo booth</li>
 			<li>Wes Anderson chillwave Marfa pour-over Etsy banh mi</li>
@@ -691,20 +754,16 @@ def order(request):
 		</p>
 	</section>
 
-	<section class="note">
-		<h2>Notes about the slide</h2>
-		<p>Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic. Farm-to-table bespoke fingerstache, kale chips umami brunch letterpress.</p>
-		<p>Whatever authentic disrupt, you probably haven’t heard of them direct trade mlkshk Etsy. Gluten-free roof party plaid four loko quinoa.</p>
-		<p>Echo Park 8-bit sustainable umami deep v Kickstarter.</p>
-		<p>Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic.</p>
-		<p>Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic. Farm-to-table bespoke fingerstache, kale chips umami brunch letterpress.</p>
-		<p>Whatever authentic disrupt, you probably haven’t heard of them direct trade mlkshk Etsy. Gluten-free roof party plaid four loko quinoa.</p>
-		<p>Echo Park 8-bit sustainable umami deep v Kickstarter.</p>
-		<p>Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic.</p>
-		<p>Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic. Farm-to-table bespoke fingerstache, kale chips umami brunch letterpress.</p>
-		<p>Whatever authentic disrupt, you probably haven’t heard of them direct trade mlkshk Etsy. Gluten-free roof party plaid four loko quinoa.</p>
-		<p>Echo Park 8-bit sustainable umami deep v Kickstarter.</p>
-		<p>Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic.</p>
+	<section class="slide-notes">
+		<h2>Slide notes should correctly sit next to the slides</h2>
+		<p>\(\LaTeX\) commands are supported too in the notes.
+			\[
+				\theta_i =
+					\frac{\tau_i\cdot l_i}{\sum_{k=1}^{M}\tau_{k}\cdot l_{k}},
+				\hspace{1em}
+				\tau_i =
+					\frac{\theta_i/l_i}{\sum_{k=1}^{M}\theta_k/l_k}
+			\]</p>
 	</section>
 
 	<div class="progress"></div>
