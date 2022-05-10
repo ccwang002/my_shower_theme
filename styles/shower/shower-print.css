@@ -1,8 +1,11 @@
 /* Print */
 
 @page {
-    margin: 0;
-    size: 1024px 576px;
+    --page-margin: 32px;
+    margin: var(--page-margin);
+    size:
+        calc(1024px + var(--page-margin) * 2)
+        calc(576px + var(--page-margin) * 2);
 }
 
 .shower {
