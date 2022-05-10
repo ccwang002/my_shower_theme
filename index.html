@@ -13,10 +13,10 @@
 		.shower {
 			--slide-ratio: calc(16 / 9);
 			--color-key: #008aa5;
+			--slide-notes-max-width: 80ch;
 		}
 
 		.slide-notes {
-			max-width: 48em;
 			line-height: 1.75em;
 		}
 
@@ -78,14 +78,23 @@
 		<p>Like the slides, slide notes are also a grid item. To make a slide notes span over multiple slides, change its grid settings to span over multiple over rows:</p>
 		<pre class="language-css">
 <code>#my-notes {
-	grid-row-end: span 2;
+	grid-row-end: span 3;
 }</code></pre>
+
+		<h3>Cap slide notes maximal width</h3>
+		<p>While the width of slide notes are confined within the viewport, text on wider viewports can become too wide to read.
+			Cap the maximum width by:</p>
+		<pre class="language-css">
+<code>.shower {
+	--slide-notes-max-width: 80ch;
+}</code></pre>
+
 		<style>
 			#slide-notes-styling {
 				--border-space: calc(var(--slide-gap) * var(--slide-scale) / 3);
 				margin: 0 calc(var(--border-space) * -1);
 				padding: 0 var(--border-space);
-				grid-row-end: span 2;
+				grid-row-end: span 3;
 				border: solid 2px var(--color-medium);
 			}
 		</style>

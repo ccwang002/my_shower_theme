@@ -8,9 +8,7 @@
     overflow-y: scroll;
     box-sizing: border-box;
 
-    max-width: calc(
-        var(--slide-width) * var(--slide-scale) * 1.75
-    );
+    max-width: var(--slide-notes-max-width);
 
     font-size: 0.75rem;
 }

@@ -16,6 +16,8 @@
     --slide-left-side: 96px;
     --slide-right-side: 112px;
 
+    --slide-notes-max-width: initial;
+
     --color-key: #4caf50;
     --color-black: #212121;
     --color-dark: #757575;
