@@ -1,0 +1,8 @@
+/* Print */
+section.slide-notes {
+    padding: 4em 6em;
+    height: 100%;
+
+    font-size: 2rem;
+    page-break-after: always;
+}
