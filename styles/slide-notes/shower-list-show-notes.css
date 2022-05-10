@@ -1,8 +1,6 @@
 /* Shower List with Slide Notes */
 
 .shower.list.show-notes {
-    --slide-scale: 0.3;
-
     /* In small viewports, use single column */
     grid-template-columns:
         calc(
@@ -14,21 +12,10 @@
     ;
 }
 
-
-/* Responsive
- * based on Bootstrap 5's breakpoints */
-
-@media (min-width: 576px) {
-    .shower.list.show-notes {
-        --slide-scale: 0.4;
-    }
-}
-
 @media (min-width: 768px) {
     /* Show slides and their notes side by side */
 
     .shower.list.show-notes {
-        --slide-scale: 0.3;
         grid-template-columns:
             calc(var(--slide-width) * var(--slide-scale))
             calc(
@@ -44,29 +31,5 @@
     }
     .shower.list.show-notes .slide-notes {
         grid-column: 2 / 3;
-    }
-}
-
-@media (min-width: 992px) {
-    .shower.list.show-notes {
-        --slide-scale: 0.4;
-    }
-}
-
-@media (min-width: 1200px) {
-    .shower.list.show-notes {
-        --slide-scale: 0.5;
-    }
-}
-
-@media (min-width: 1600px) {
-    .shower.list.show-notes {
-        --slide-scale: 0.75;
-    }
-}
-
-@media (min-width: 2336px) {
-    .shower.list.show-notes  {
-        --slide-scale: 1;
     }
 }
