@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="node_modules/katex/dist/contrib/copy-tex.min.css" type="text/css"/>
 	<link rel="stylesheet" href="styles/styles.css">
     <style>
-        /* Custom color theme */
+        /* Customize the theme */
 		.shower {
 			--slide-ratio: calc(16 / 9);
 			--color-key: #008aa5;
@@ -22,6 +22,22 @@
 
 		.slide-notes pre code {
 			background: none;
+		}
+
+		/* Explicit notes control labels */
+		.control {
+			--radius: 0.75em;
+			--line-height: 1.5em;
+		}
+		.control input[type="checkbox"] + label::after {
+			text-align: center;
+			content: "N";
+			color: var(--color-off);
+
+		}
+		.control input[type="checkbox"]:checked + label::after {
+			content: "Y";
+			color: var(--color-on);
 		}
     </style>
 </head>
