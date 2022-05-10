@@ -791,6 +791,15 @@ def order(request):
 	<script defer src="node_modules/katex/dist/contrib/copy-tex.min.js"></script>
 	<script>
 		document.addEventListener('DOMContentLoaded', (event) => {
+			// Display or hide the slide notes
+			const body = document.querySelector('body');
+			const notesToggle = document.querySelector('.control .show-notes input');
+			notesToggle.checked ? body.classList.add('show-notes') : body.classList.remove('show-notes');
+			notesToggle.addEventListener('click', (event) => {
+				body.classList.toggle('show-notes');
+			});
+
+			// Load Highlight.js
 			// Convert tab to be 4 space in the code examples
 			hljs.configure({
 				tabReplace: '    '
