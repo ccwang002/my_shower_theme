@@ -32,4 +32,4 @@ jobs:
           branch: gh-pages
           folder: bundled
           token: ${{ secrets.GITHUB_TOKEN }}
-
+          commit-message: Update slides
