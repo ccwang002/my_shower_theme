@@ -25,17 +25,19 @@
 		}
 
 		/* Explicit notes control labels */
+
 		.control {
 			--radius: 0.75em;
 			--line-height: 1.5em;
 		}
-		.control input[type="checkbox"] + label::after {
+
+		.control input[type='checkbox'] + label::after {
 			text-align: center;
 			content: "N";
 			color: var(--color-off);
 
 		}
-		.control input[type="checkbox"]:checked + label::after {
+		.control input[type='checkbox']:checked + label::after {
 			content: "Y";
 			color: var(--color-on);
 		}

@@ -55,7 +55,7 @@
     justify-content: flex-start;
 }
 
-.control input[type="checkbox"] {
+.control input[type='checkbox'] {
     visibility: collapse;
     padding: 0;
     margin: 0;
@@ -66,8 +66,8 @@
     padding-right: calc(var(--width) + 1em);
 }
 
-.control input[type="checkbox"] + label::before,
-.control input[type="checkbox"] + label::after {
+.control input[type='checkbox'] + label::before,
+.control input[type='checkbox'] + label::after {
     content: ' ';
     display: block;
     position: absolute;
@@ -75,10 +75,11 @@
     transition-duration: 0.3s;
 }
 
-.control input[type="checkbox"] + label::before {
+.control input[type='checkbox'] + label::before {
     height: calc(var(--radius) * 2);
     width: var(--width);
     top: calc(var(--radius) * 2 - var(--border) - var(--line-height));
+
     /* right: calc(var(--radius)); */
     right: 0;
     border: var(--border) solid var(--color-off);
@@ -86,7 +87,7 @@
     background: var(--color-off);
 }
 
-.control input[type="checkbox"] + label::after {
+.control input[type='checkbox'] + label::after {
     height: calc(var(--radius) * 2);
     width: calc(var(--radius) * 2);
     top: calc(var(--radius) * 2 - var(--line-height));
@@ -95,12 +96,12 @@
     background: var(--color-on);
 }
 
-input[type="checkbox"]:checked + label::before {
+input[type='checkbox']:checked + label::before {
     border-color: var(--color-on);
     background: var(--color-on);
 }
 
-input[type="checkbox"]:checked + label::after {
+input[type='checkbox']:checked + label::after {
     right: calc(var(--border));
     background: var(--color-key);
 }

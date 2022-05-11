@@ -24,6 +24,7 @@
 
 
 /* Common two column layouts */
+
 .columns.two.l20,
 .columns.two.r80 {
     grid-template-columns: 1fr 4fr;
