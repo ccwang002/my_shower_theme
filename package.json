@@ -35,7 +35,8 @@
   },
   "scripts": {
     "test": "stylelint 'styles/**/*.css'",
-    "start": "browser-sync start --server --no-notify --no-ui --no-ghost-mode --no-online --port 8080 --files 'fonts/*,pictures/*,styles/**,index.html'"
+    "start": "browser-sync start --server --no-notify --no-ui --no-ghost-mode --no-online --port 8080 --files 'fonts/*,pictures/*,styles/**,index.html'",
+    "bundle": "./scripts/bundle.sh"
   },
   "dependencies": {
     "@highlightjs/cdn-assets": "^11.5.1",
