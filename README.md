@@ -1,4 +1,4 @@
-# My customized theme for Shower
+# My customized theme for Shower HTML presentation
 [![Test status](https://github.com/ccwang002/my_shower_theme/actions/workflows/pages/pages-build-deployment/badge.svg)][workflow-status]
 
 This theme is based on the [Shower's material theme][material
@@ -49,7 +49,7 @@ This repo also sets up the GitHub workflow that will automatically bundle and pu
 
 ## License
 The theme is shared under [MIT license](LICENSE.md).
-It directly modifies the offical [Material][material theme] theme ([the origianl license][material-orig-license]) and will be in sync with upstream updates.
+It directly modifies the official [Material][material theme] theme ([the original license][material-orig-license]) and will be in sync with upstream updates.
 
 The theme builds on the following packages and resources:
 
