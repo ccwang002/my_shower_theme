@@ -42,7 +42,7 @@ rsync -a \
     styles fonts fonts pictures \
     .gitattributes .gitignore \
     .editorconfig .stylelintrc \
-    LICENSE.md README.md \
+    LICENSE.md LICENSE.shower_material.md README.md \
     bundled/
 # fix the library file paths in the bundle
 sed -f scripts/fix_npm_pkg_paths.sed index.html > bundled/index.html

@@ -1,45 +1,69 @@
-# My Customized theme for Shower
-This theme is customized based on the [Shower's material theme][material
-theme].  It adds code highlighting by Highlight.js and customized stylings.
+# My customized theme for Shower
+[![Test status](https://github.com/ccwang002/my_shower_theme/actions/workflows/pages/pages-build-deployment/badge.svg)][workflow-status]
+
+This theme is based on the [Shower's material theme][material
+theme].
+It adds toggleable slide notes, code highlighting, LaTeX rendering, and some other customized styles.
 [See it in action][gh-pages].
 
-[![Test status](https://github.com/shower/material/workflows/Test/badge.svg)](https://github.com/shower/material/actions/workflows/test.yml)
+| Slide notes shown | Slide notes hidden |
+|-------------------|--------------------|
+| ![Screenshot with slides notes shown](pictures/demo-slide-notes-shown.png) | ![Screenshot with slide notes hidden](pictures/demo-slide-notes-hidden.png) |
 
-![theme screenshot](pictures/canvas.png)
+All the features of the official Shower themes are supported, so check out [the overview of their features](https://github.com/shower/shower/blob/main/docs/features.md) for the general usage of Shower presentation engine and how to modify the theme variables.
 
 [material theme]: https://github.com/shower/material
 [gh-pages]: https://blog.liang2.tw/my_shower_theme/
+[workflow-status]: https://github.com/ccwang002/my_shower_theme/actions/workflows/publish.yml
 
 
-Get the Shower template where Ribbon is already included. Download the [template archive](https://shwr.me/shower.zip) or create a slide deck via [CLI tool](https://github.com/shower/cli). It requires [Node.js](https://nodejs.org/) installed.
+## How to use this theme without setup
+To use this theme without any setup (e.g., npm, git repo), download and extract the artifact (`slides.zip`) from [the latest workflow output][workflow-status].
+Open `index.html` to start the presentation.
+This folder serves as a standalone and offline presentation.
+Develop the presentation by modifying `index.html` and other related files as needed.
 
-	npx @shower/cli create
 
-Wait for the installation and choose the **material** option in the wizard and you’re all set.
+## How to set up this theme
+To set up this theme with development friendly features, fork or download the source code of this repository.
 
-    npm start
+To set up, node.js is required:
 
-All theme’s features are demonstrated in the [index.html](index.html) file, [see it live](https://shwr.me/shower/themes/material/). Use it as a reference while building your presentation. See more detailed [features overview](https://github.com/shower/shower/blob/main/docs/features.md).
+    npm install     # Install the dependencies
+    npm start       # Start live reloading by browsersync
+    npm test        # Run CSS style check using stylelint
 
-Material theme supports any slide ratio you want. But it’s optimized for the most common ones: 16×9 and 4×3. It’s 16×9 by default, but you can change it by adjusting `--slide-ratio` property for `.shower`, [see example](https://github.com/shower/ribbon/blob/main/index.html#L10) in `index.html`.
+To create the standalone presentation bundle, run:
+
+    npm run bundle
+
+Modify the scripts at `scripts/bundle.sh` and `scripts/fix_npm_pkg_paths.sed` to include additional npm packages or files at different folders.
+
+To publish the bundled presentation to GitHub Pages, run:
 
     npm run publish
 
-You can export slides to PDF by printing it via built-in dialog in Chromium-based browsers or via CLI tool. See [printing documentation](https://github.com/shower/shower/blob/main/docs/pdf.md) for more options.
+This repo also sets up the GitHub workflow that will automatically bundle and publish the presentations on every git push.
 
-```css
-.shower {
-    --color-key: #008aa5;
-}
-```
 
 
 ## License
-The theme template is shared under MIT license, which is based on the following packages:
+The theme is shared under [MIT license](LICENSE.md).
+It directly modifies the offical [Material][material theme] theme ([the origianl license][material-orig-license]) and will be in sync with upstream updates.
 
-- [shower]: HTML5 slideshow framework by Vadim Makeev *et al.*, MIT license
-- [shower's material theme][material theme] under [MIT License](LICENSE.md)
-- [highlight.js]: Syntax highlight library by Ivan Sagalaev *et al.*, MIT license
+The theme builds on the following packages and resources:
 
+- Shower's official theme, [Material][material theme], [MIT License][material-orig-license]
+- [Shower]: HTML5 presentation framework by Vadim Makeev *et al.*, MIT license
+- [highlight.js]: Code highlighting library by Ivan Sagalaev *et al.*, MIT license
+- [KaTeX]: LaTeX math rendering, MIT license
+- Fonts:
+    - [Source Sans]: SIL Open Font License 1.1
+    - [Fira Code]: SIL Open Font License 1.1
+
+[material-orig-license]: LICENSE.shower_material.md
 [shower]: https://github.com/shower/shower
 [highlight.js]: http://highlightjs.org/
+[KaTeX]: https://github.com/KaTeX/KaTeX
+[Source Sans]: https://github.com/adobe-fonts/source-sans
+[Fira Code]: https://github.com/tonsky/FiraCode
