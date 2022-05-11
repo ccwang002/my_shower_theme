@@ -10,6 +10,7 @@ touch bundled/.nojekyll
 
 # Bundle @shower/core
 rsync -a node_modules/@shower/core/dist/ bundled/lib/shower
+rsync -a node_modules/@shower/core/{LICENSE.md,README.md} bundled/lib/shower
 
 
 # Bundle highlight.js
