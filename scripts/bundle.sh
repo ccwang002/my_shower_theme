@@ -33,7 +33,6 @@ rm -rf \
 # keep only minimized js and CSS files
 find bundled/lib/katex/contrib \
     -type f \
-    -depth 1 \
     ! -name '*.min.js' ! -name '*.min.css' \
     -exec rm -- {} +
 
