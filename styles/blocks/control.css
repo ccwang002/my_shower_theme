@@ -1,3 +1,5 @@
+/* Slides control (slide notes toggle) */
+
 .control {
     --color-off: var(--color-dark);
     --color-on: var(--color-back);
