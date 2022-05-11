@@ -24,7 +24,7 @@ jobs:
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: slide-template
+          name: slides
           path: bundled/
       - name: Publish to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
