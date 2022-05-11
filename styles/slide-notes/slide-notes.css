@@ -1,5 +1,7 @@
+@import 'content.css';
 @import 'shower-list-show-notes.css' screen;
 @import 'slide-notes-print.css' print;
+
 
 .slide-notes {
     position: relative;
@@ -11,6 +13,7 @@
     max-width: var(--slide-notes-max-width);
 
     font-size: 0.75rem;
+    line-height: 1.6em;
 }
 
 

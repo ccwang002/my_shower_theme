@@ -26,6 +26,8 @@
     --color-back: #eeeeee;
     --color-yellow: #fff59d;
 
+    --font-family: 'Source Sans 3 VF';
+
     --progress-size: 8px;
 
     --diagonal: linear-gradient(
@@ -40,5 +42,5 @@
     margin: 0;
     color: black;
     counter-reset: slide;
-    font: 24px/2 'Roboto', sans-serif;
+    font: 24px/2 var(--font-family), sans-serif;
 }
