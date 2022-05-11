@@ -1,7 +1,7 @@
 /* Print */
 
 @page {
-    --page-margin: 32px;
+    --page-margin: 1rem;
     margin: var(--page-margin);
     size:
         calc(1024px + var(--page-margin) * 2)
@@ -10,5 +10,6 @@
 
 .shower {
     -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
     text-rendering: geometricPrecision;
 }
