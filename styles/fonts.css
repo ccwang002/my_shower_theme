@@ -8,8 +8,7 @@
     src:
         local('Source Sans 3 VF'),
         url('../fonts/source-sans/SourceSans3VF-Roman.ttf.woff2') format('woff2'),
-        url('../fonts/source-sans/SourceSans3VF-Roman.ttf.woff') format('woff'),
-        url('../fonts/source-sans/SourceSans3VF-Roman.ttf') format('truetype');
+        url('../fonts/source-sans/SourceSans3VF-Roman.ttf.woff') format('woff');
 }
 
 @font-face{
@@ -21,8 +20,7 @@
     src:
         local('Source Sans 3 VF'),
         url('../fonts/source-sans/SourceSans3VF-Italic.ttf.woff2') format('woff2-variations'),
-        url('../fonts/source-sans/SourceSans3VF-Italic.ttf.woff') format('woff-variations'),
-        url('../fonts/source-sans/SourceSans3VF-Italic.ttf') format('truetype-variations');
+        url('../fonts/source-sans/SourceSans3VF-Italic.ttf.woff') format('woff-variations');
 }
 
 
@@ -37,6 +35,5 @@
     src:
         local('Fira Code VF'),
         url('../fonts/fira-code/FiraCode-VF.woff2') format('woff2-variations'),
-        url('../fonts/fira-code/FiraCode-VF.woff') format('woff-variations'),
-        url('../fonts/fira-code/FiraCode-VF.ttf') format('ttf-variations');
+        url('../fonts/fira-code/FiraCode-VF.woff') format('woff-variations');
 }
