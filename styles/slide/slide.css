@@ -21,12 +21,15 @@
 @import 'elements/next.css';
 @import 'elements/place.css';
 @import 'elements/shout.css';
+@import 'elements/spotlight.css';
+@import 'elements/figure.css';
 
 /* Modifiers */
 
 @import 'modifiers/clear.css';
 @import 'modifiers/gray.css';
 @import 'modifiers/black.css';
+@import 'modifiers/tight.css';
 
 /* Slide */
 
@@ -35,7 +38,9 @@
     z-index: 0;
     overflow: hidden;
     box-sizing: border-box;
-    padding: 79px 112px 0 96px;
+    padding:
+        79px var(--slide-right-side)
+        0 var(--slide-left-side);
     width: var(--slide-width);
     height: var(--slide-height);
     background-color: white;
@@ -45,12 +50,12 @@
 
 .slide::after {
     position: absolute;
-    right: 16px;
-    bottom: 38px;
+    right: 1rem;
+    bottom: 1rem;
     left: 0;
     color: var(--color-light);
     line-height: 18px;
-    text-align: center;
+    text-align: right;
     counter-increment: slide;
     content: counter(slide);
 }

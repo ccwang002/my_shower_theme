@@ -1,64 +1,42 @@
-/* Roboto */
+/* Source Sans 3 VF */
 
-@font-face {
-    font-family: 'Roboto';
-    font-weight: 100;
-    font-display: swap;
+@font-face{
+    font-family: 'Source Sans 3 VF';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
     src:
-        local('Roboto Light'),
-        local('Roboto-Light'),
-        url('../fonts/roboto-light.woff2') format('woff2');
+        local('Source Sans 3 VF'),
+        url('../fonts/source-sans/SourceSans3VF-Roman.ttf.woff2') format('woff2'),
+        url('../fonts/source-sans/SourceSans3VF-Roman.ttf.woff') format('woff'),
+        url('../fonts/source-sans/SourceSans3VF-Roman.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-display: swap;
-    src:
-        local('Roboto'),
-        local('Roboto-Regular'),
-        url('../fonts/roboto-regular.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-weight: 400;
+@font-face{
+    font-family: 'Source Sans 3 VF';
+    font-weight: 200 900;
     font-style: italic;
-    font-display: swap;
+    font-stretch: normal;
+    font-display: fallback;
     src:
-        local('Roboto Italic'),
-        local('Roboto-Italic'),
-        url('../fonts/roboto-italic.woff2') format('woff2');
+        local('Source Sans 3 VF'),
+        url('../fonts/source-sans/SourceSans3VF-Italic.ttf.woff2') format('woff2-variations'),
+        url('../fonts/source-sans/SourceSans3VF-Italic.ttf.woff') format('woff-variations'),
+        url('../fonts/source-sans/SourceSans3VF-Italic.ttf') format('truetype-variations');
 }
 
-@font-face {
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-display: swap;
-    src:
-        local('Roboto Bold'),
-        local('Roboto-Bold'),
-        url('../fonts/roboto-bold.woff2') format('woff2');
-}
+
+/* Fira Code VF */
 
 @font-face {
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
+    font-family: 'Fira Code VF';
+    font-weight: 300 700;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: fallback;
     src:
-        local('Roboto Bold Italic'),
-        local('Roboto-BoldItalic'),
-        url('../fonts/roboto-bold-italic.woff2') format('woff2');
-}
-
-/* Roboto Mono */
-
-@font-face {
-    font-family: 'Roboto Mono';
-    font-display: swap;
-    src:
-        local('Roboto Mono'),
-        local('RobotoMono-Regular'),
-        url('../fonts/roboto-mono-regular.woff2') format('woff2');
+        local('Fira Code VF'),
+        url('../fonts/fira-code/FiraCode-VF.woff2') format('woff2-variations'),
+        url('../fonts/fira-code/FiraCode-VF.woff') format('woff-variations'),
+        url('../fonts/fira-code/FiraCode-VF.ttf') format('ttf-variations');
 }

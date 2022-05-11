@@ -1,9 +1,21 @@
 /* Shower List */
 
 .shower.list {
-    padding: calc(
-        var(--slide-gap) * var(--slide-scale)
+    --shower-list-block: calc(
+        var(--slide-gap) *
+        var(--slide-scale)
     );
+    --shower-list-inline: calc(
+        var(--slide-gap) *
+        var(--slide-scale) +
+        env(safe-area-inset-left)
+    );
+
+    padding:
+        var(--shower-list-block)
+        var(--shower-list-inline);
+
+    overflow-x: hidden;
     box-sizing: border-box;
     width: 100%;
     display: grid;
@@ -28,20 +40,45 @@
     clip: rect(0, auto, auto, 0);
 }
 
-/* Responsive */
+/* Responsive
+ * based on Bootstrap 5's breakpoints */
 
 .shower.list {
-    --slide-scale: 0.25;
+    --slide-scale: 0.3;
 }
 
-@media (min-width: 1168px) {
+@media (min-width: 576px) {
+    .shower.list {
+        --slide-scale: 0.4;
+    }
+}
+
+@media (min-width: 768px) {
+    .shower.list {
+        --slide-scale: 0.3;
+    }
+}
+
+@media (min-width: 992px) {
+    .shower.list {
+        --slide-scale: 0.4;
+    }
+}
+
+@media (min-width: 1200px) {
     .shower.list {
         --slide-scale: 0.5;
     }
 }
 
-@media (min-width: 2336px) {
+@media (min-width: 1600px) {
     .shower.list {
+        --slide-scale: 0.75;
+    }
+}
+
+@media (min-width: 2336px) {
+    .shower.list  {
         --slide-scale: 1;
     }
 }
