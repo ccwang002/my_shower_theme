@@ -31,12 +31,14 @@
   ],
   "devDependencies": {
     "browser-sync": "^2.27.9",
+    "gh-pages": "^4.0.0",
     "stylelint": "^14.8.2"
   },
   "scripts": {
     "test": "stylelint 'styles/**/*.css'",
     "start": "browser-sync start --server --no-notify --no-ui --no-ghost-mode --no-online --port 8080 --files 'fonts/*,pictures/*,styles/**,index.html'",
-    "bundle": "./scripts/bundle.sh"
+    "bundle": "./scripts/bundle.sh",
+    "publish": "gh-pages -d bundled/ --dotfiles -m 'Update slides'"
   },
   "dependencies": {
     "@highlightjs/cdn-assets": "^11.5.1",
