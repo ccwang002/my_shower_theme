@@ -771,7 +771,7 @@ def order(request):
 	</section>
 
 	<section class="slide">
-		<h2>Test \(\LaTeX\) rendering by \(\KaTeX\)</h2>
+		<h2>Test $\LaTeX$ rendering by $\KaTeX$</h2>
 		<p>Simplified RSEM generative model (copied from <a href="https://ro-che.info/articles/2017-01-29-rsem">Roman's blog</a>).</p>
 		<p>
 			\[\begin{aligned}
@@ -783,7 +783,7 @@ def order(request):
 
 	<section class="slide-notes">
 		<h2>Slide notes should correctly sit next to the slides</h2>
-		<p>\(\LaTeX\) commands are supported too in the notes.
+		<p>$\LaTeX$ commands are supported too in the notes.
 			\[
 				\theta_i =
 					\frac{\tau_i\cdot l_i}{\sum_{k=1}^{M}\tau_{k}\cdot l_{k}},
@@ -827,7 +827,13 @@ def order(request):
 			renderMathInElement(document.body, {
 				// Left aligned display equations
 				// Details at https://github.com/KaTeX/KaTeX/issues/1990
-				fleqn: true
+				fleqn: true,
+				delimiters: [
+					{ left: '$$', right: '$$', display: true },
+					{ left: '$', right: '$', display: false },
+					{ left: '\\(', right: '\\)', display: false },
+					{ left: '\\[', right: '\\]', display: true }
+				]
 			});
 		});
 	</script>
