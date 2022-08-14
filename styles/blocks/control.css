@@ -23,6 +23,11 @@
     list-style: none;
 }
 
+/* Hide the control in presentation mode */
+
+.full .control {
+    display: none;
+}
 
 /* Responsive */
 
