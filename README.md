@@ -1,7 +1,7 @@
 # My customized theme for Shower HTML presentation
 [![Test status](https://github.com/ccwang002/my_shower_theme/actions/workflows/pages/pages-build-deployment/badge.svg)][workflow-status]
 
-This theme is based on the [Shower's material theme][material
+This theme is based on the [Shower's material theme][Material
 theme].
 It adds toggleable slide notes, code highlighting, LaTeX rendering, and some other customized styles.
 [See it in action][gh-pages].
@@ -12,7 +12,7 @@ It adds toggleable slide notes, code highlighting, LaTeX rendering, and some oth
 
 All the features of the official Shower themes are supported, so check out [the overview of their features](https://github.com/shower/shower/blob/main/docs/features.md) for the general usage of Shower presentation engine and how to modify the theme variables.
 
-[material theme]: https://github.com/shower/material
+[Material theme]: https://github.com/shower/material
 [gh-pages]: https://blog.liang2.tw/my_shower_theme/
 [workflow-status]: https://github.com/ccwang002/my_shower_theme/actions/workflows/publish.yml
 
@@ -49,19 +49,19 @@ This repo also sets up the GitHub workflow that will automatically bundle and pu
 
 ## License
 The theme is shared under [MIT license](LICENSE.md).
-It directly modifies the official [Material][material theme] theme ([the original license][material-orig-license]) and will be in sync with upstream updates.
+It directly modifies the official [Material][Material theme] theme ([the original license][Material license]) and will be in sync with upstream updates.
 
 The theme builds on the following packages and resources:
 
-- Shower's official theme, [Material][material theme], [MIT License][material-orig-license]
+- Shower's official theme, [Material][Material theme], [MIT License][Material license]
 - [Shower]: HTML5 presentation framework by Vadim Makeev *et al.*, MIT license
 - [highlight.js]: Code highlighting library by Ivan Sagalaev *et al.*, MIT license
 - [KaTeX]: LaTeX math rendering, MIT license
 - Fonts:
-    - [Source Sans]: SIL Open Font License 1.1
-    - [Fira Code]: SIL Open Font License 1.1
+    - [Source Sans], SIL Open Font License 1.1
+    - [Fira Code], SIL Open Font License 1.1
 
-[material-orig-license]: LICENSE.shower_material.md
+[Material license]: LICENSE.shower_material.md
 [shower]: https://github.com/shower/shower
 [highlight.js]: http://highlightjs.org/
 [KaTeX]: https://github.com/KaTeX/KaTeX
