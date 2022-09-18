@@ -81,7 +81,7 @@
 	&lt;h2&gt;Slide notes style customization&lt;/h2&gt;
 	&lt;style&gt;
 		#my-notes {
-			border: solid 2px var(--color-medium);
+			border: solid 2px var(--color-key);
 		}
 	&lt;/style&gt;
 &lt;/section&gt;</code></pre>
@@ -100,6 +100,19 @@
 	--slide-notes-max-width: 80ch;
 }</code></pre>
 
+		<h3>Additional elements</h3>
+		<p><code>&lt;details&gt;&lt;summary&gt;</code> are supported too:</p>
+		<details>
+			<summary>Extra details can go here</summary>
+			<p>Extra details about the slide notes.</p>
+
+			<details>
+				<summary>And it can be nested</summary>
+				<p>Nested details are like this.</p>
+			</details>
+		</details>
+
+		<p><a href="#">Hyperlinks</a> are styled to match the key color (<code>--color-key</code>).</p>
 		<style>
 			#slide-notes-styling {
 				--border-space: calc(var(--slide-gap) * var(--slide-scale) / 3);
@@ -107,7 +120,7 @@
 				max-width: calc(var(--slide-notes-max-width) + var(--border-space) * 2);
 				padding: 0 var(--border-space);
 				grid-row-end: span 3;
-				border: solid 2px var(--color-medium);
+				border: solid 2px var(--color-key);
 			}
 		</style>
 	</section>
