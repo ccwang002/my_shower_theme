@@ -100,6 +100,19 @@
 	--slide-notes-max-width: 80ch;
 }</code></pre>
 
+		<h3>Additional elements</h3>
+		<p><code>&lt;details&gt;&lt;summary&gt;</code> are supported too:</p>
+		<details>
+			<summary>Extra details can go here</summary>
+			<p>Extra details about the slide notes.</p>
+
+			<details>
+				<summary>And it can be nested</summary>
+				<p>Nested details are like this.</p>
+			</details>
+		</details>
+
+		<p><a href="#">Hyperlinks</a> are styled to match the key color (<code>--color-key</code>).</p>
 		<style>
 			#slide-notes-styling {
 				--border-space: calc(var(--slide-gap) * var(--slide-scale) / 3);
