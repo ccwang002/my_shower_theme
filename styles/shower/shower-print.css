@@ -10,5 +10,5 @@
 .shower {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
-    text-rendering: geometricPrecision;
+    text-rendering: geometricprecision;
 }
