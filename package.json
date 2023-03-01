@@ -32,7 +32,7 @@
   "devDependencies": {
     "browser-sync": "^2.27.9",
     "gh-pages": "^5.0.0",
-    "stylelint": "^14.8.2"
+    "stylelint": "^15.2.0"
   },
   "scripts": {
     "test": "stylelint 'styles/**/*.css'",
