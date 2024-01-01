@@ -11,15 +11,9 @@
 
 .slide pre code {
     display: block;
-    margin-left: calc(
-        var(--slide-left-side) * -1
-    );
+    margin-left: calc(var(--slide-left-side) * -1);
     padding: 0 0 0 var(--slide-left-side);
-    width: calc(
-        100% +
-        var(--slide-left-side) +
-        var(--slide-right-side)
-    );
+    width: calc(100% + var(--slide-left-side) + var(--slide-right-side));
     background-color: transparent;
     line-height: 2;
     white-space: pre;
@@ -34,7 +28,7 @@
     margin-left: -2em;
     color: var(--color-light);
     counter-increment: code;
-    content: counter(code, decimal-leading-zero) '.';
+    content: counter(code, decimal-leading-zero) ".";
 }
 
 /* Marked */

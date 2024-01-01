@@ -2,31 +2,20 @@
 
 .caption {
     grid-column: 1 / -1;
-    margin-top: calc(
-        -1 *
-        var(--slide-gap) *
-        var(--slide-scale)
-    );
+    margin-top: calc(-1 * var(--slide-gap) * var(--slide-scale));
     margin-left: calc(
-        -1 *
-        var(--slide-gap) *
-        var(--slide-scale) -
-        env(safe-area-inset-left)
+        -1 * var(--slide-gap) * var(--slide-scale) - env(safe-area-inset-left)
     );
     padding-top: calc(var(--slide-scale) * 96px * 0.9);
     padding-bottom: calc(var(--slide-scale) * 96px);
     padding-left: calc(
-        var(--slide-gap) *
-        var(--slide-scale) +
-        env(safe-area-inset-left)
+        var(--slide-gap) * var(--slide-scale) + env(safe-area-inset-left)
     );
     box-sizing: border-box;
     width: 100vw;
     background-color: var(--color-key);
     background-image: var(--diagonal);
-    font-size: calc(
-        var(--slide-scale) * 96px
-    );
+    font-size: calc(var(--slide-scale) * 96px);
 }
 
 /* Elements */
@@ -35,7 +24,9 @@
     margin: 0;
     padding-bottom: 0.28em;
     color: white;
-    font: 300 1.17em/1 var(--font-family), sans-serif;
+    font:
+        300 1.17em/1 var(--font-family),
+        sans-serif;
 }
 
 .caption p {

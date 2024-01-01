@@ -10,11 +10,7 @@
     width: var(--spotlight-size, var(--spotlight-width, 256px));
     height: var(--spotlight-size, var(--spotlight-height, 256px));
     border-radius: var(--spotlight-radius, 50%);
-    box-shadow:
-        0 0 0 var(--slide-width)
-        rgba(
-            0, 0, 0,
-            var(--spotlight-opacity, 0.2)
-        );
+    box-shadow: 0 0 0 var(--slide-width)
+        rgba(0, 0, 0, var(--spotlight-opacity, 0.2));
     pointer-events: none;
 }

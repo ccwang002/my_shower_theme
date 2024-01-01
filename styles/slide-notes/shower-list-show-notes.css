@@ -2,13 +2,10 @@
 
 .shower.list.show-notes {
     /* In small viewports, use single column */
-    grid-template-columns:
-        calc(
-            100vw
-            - var(--slide-gap) * var(--slide-scale) * 2.5
-            - env(safe-area-inset-left)
-            - env(safe-area-inset-right)
-        );
+    grid-template-columns: calc(
+        100vw - var(--slide-gap) * var(--slide-scale) * 2.5 -
+            env(safe-area-inset-left) - env(safe-area-inset-right)
+    );
 }
 
 @media (min-width: 768px) {
@@ -18,11 +15,9 @@
         grid-template-columns:
             calc(var(--slide-width) * var(--slide-scale))
             calc(
-                100vw
-                - var(--slide-width) * var(--slide-scale)
-                - var(--slide-gap) * var(--slide-scale) * 3.5
-                - env(safe-area-inset-left)
-                - env(safe-area-inset-right)
+                100vw - var(--slide-width) * var(--slide-scale) -
+                    var(--slide-gap) * var(--slide-scale) * 3.5 -
+                    env(safe-area-inset-left) - env(safe-area-inset-right)
             );
     }
 

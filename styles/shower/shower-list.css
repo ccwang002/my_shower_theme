@@ -1,30 +1,19 @@
 /* Shower List */
 
 .shower.list {
-    --shower-list-block: calc(
-        var(--slide-gap) *
-        var(--slide-scale)
-    );
+    --shower-list-block: calc(var(--slide-gap) * var(--slide-scale));
     --shower-list-inline: calc(
-        var(--slide-gap) *
-        var(--slide-scale) +
-        env(safe-area-inset-left)
+        var(--slide-gap) * var(--slide-scale) + env(safe-area-inset-left)
     );
 
-    padding:
-        var(--shower-list-block)
-        var(--shower-list-inline);
+    padding: var(--shower-list-block) var(--shower-list-inline);
 
     overflow-x: hidden;
     box-sizing: border-box;
     width: 100%;
     display: grid;
-    grid-gap: calc(
-        var(--slide-gap) * var(--slide-scale)
-    );
-    grid-auto-rows: calc(
-        var(--slide-height) * var(--slide-scale)
-    );
+    grid-gap: calc(var(--slide-gap) * var(--slide-scale));
+    grid-auto-rows: calc(var(--slide-height) * var(--slide-scale));
     grid-template-rows: min-content;
     grid-template-columns: repeat(
         auto-fill,
@@ -78,7 +67,7 @@
 }
 
 @media (min-width: 2336px) {
-    .shower.list  {
+    .shower.list {
         --slide-scale: 1;
     }
 }

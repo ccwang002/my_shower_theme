@@ -25,18 +25,17 @@
     background-color: var(--color-key);
     background-image: var(--diagonal);
     background-repeat: no-repeat;
-    content: '';
+    content: "";
 }
 
 /* Link */
 
 .slide .shout a {
-    background-image:
-        linear-gradient(
-            to top,
-            currentColor 0.05em,
-            transparent 0.05em
-        );
+    background-image: linear-gradient(
+        to top,
+        currentColor 0.05em,
+        transparent 0.05em
+    );
     background-position: bottom 0.05em left 0;
     background-repeat: repeat-x;
     color: inherit;

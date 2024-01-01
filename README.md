@@ -1,13 +1,13 @@
 # My customized theme for Shower HTML presentation
+
 [![Test status](https://github.com/ccwang002/my_shower_theme/actions/workflows/pages/pages-build-deployment/badge.svg)][workflow-status]
 
-This theme is based on the [Shower's material theme][Material
-theme].
+This theme is based on the [Shower's material theme][Material theme].
 It adds toggleable slide notes, code highlighting, LaTeX rendering, and some other customized styles.
 [See it in action][gh-pages].
 
-| Slide notes shown | Slide notes hidden |
-|-------------------|--------------------|
+| Slide notes shown                                                          | Slide notes hidden                                                          |
+| -------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | ![Screenshot with slides notes shown](pictures/demo-slide-notes-shown.png) | ![Screenshot with slide notes hidden](pictures/demo-slide-notes-hidden.png) |
 
 All the features of the official Shower themes are supported, so check out [the overview of their features](https://github.com/shower/shower/blob/main/docs/features.md) for the general usage of Shower presentation engine and how to modify the theme variables.
@@ -16,15 +16,15 @@ All the features of the official Shower themes are supported, so check out [the 
 [gh-pages]: https://blog.liang2.tw/my_shower_theme/
 [workflow-status]: https://github.com/ccwang002/my_shower_theme/actions/workflows/publish.yml
 
-
 ## How to use this theme without setup
+
 To use this theme without any setup (e.g., npm, git repo), download and extract the artifact (`slides.zip`) from [the latest workflow output][workflow-status].
 Open `index.html` to start the presentation.
 This folder serves as a standalone and offline presentation.
 Develop the presentation by modifying `index.html` and other related files as needed.
 
-
 ## How to set up this theme
+
 To set up this theme with development friendly features, fork or download the source code of this repository.
 
 To set up, node.js is required:
@@ -45,21 +45,20 @@ To publish the bundled presentation to GitHub Pages, run:
 
 This repo also sets up the GitHub workflow that will automatically bundle and publish the presentations on every git push.
 
-
-
 ## License
+
 The theme is shared under [MIT license](LICENSE.md).
 It directly modifies the official [Material][Material theme] theme ([the original license][Material license]) and will be in sync with upstream updates.
 
 The theme builds on the following packages and resources:
 
-- Shower's official theme, [Material][Material theme], [MIT License][Material license]
-- [Shower]: HTML5 presentation framework by Vadim Makeev *et al.*, MIT license
-- [highlight.js]: Code highlighting library by Ivan Sagalaev *et al.*, MIT license
-- [KaTeX]: LaTeX math rendering, MIT license
-- Fonts:
-    - [Source Sans], SIL Open Font License 1.1
-    - [Fira Code], SIL Open Font License 1.1
+-   Shower's official theme, [Material][Material theme], [MIT License][Material license]
+-   [Shower]: HTML5 presentation framework by Vadim Makeev _et al._, MIT license
+-   [highlight.js]: Code highlighting library by Ivan Sagalaev _et al._, MIT license
+-   [KaTeX]: LaTeX math rendering, MIT license
+-   Fonts:
+    -   [Source Sans], SIL Open Font License 1.1
+    -   [Fira Code], SIL Open Font License 1.1
 
 [Material license]: LICENSE.shower_material.md
 [shower]: https://github.com/shower/shower

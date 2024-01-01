@@ -1,15 +1,9 @@
 /* Table */
 
 .slide table {
-    margin-left: calc(
-        var(--slide-left-side) * -1
-    );
+    margin-left: calc(var(--slide-left-side) * -1);
     margin-bottom: 1em;
-    width: calc(
-        100% +
-        var(--slide-left-side) +
-        var(--slide-right-side)
-    );
+    width: calc(100% + var(--slide-left-side) + var(--slide-right-side));
     border-collapse: collapse;
     border-spacing: 0;
 }
@@ -40,12 +34,11 @@
 /* Lines */
 
 .slide tr:not(:last-of-type) > * {
-    background-image:
-        linear-gradient(
-            to top,
-            var(--color-light) 0.06em,
-            transparent 0.06em
-        );
+    background-image: linear-gradient(
+        to top,
+        var(--color-light) 0.06em,
+        transparent 0.06em
+    );
     background-repeat: repeat-x;
 }
 
