@@ -42,7 +42,9 @@ find bundled/lib/katex/contrib \
 rsync -a \
     styles fonts fonts pictures \
     .gitattributes .gitignore \
-    .editorconfig .stylelintrc \
+    .editorconfig \
+    .prettierrc .prettierignore \
+    stylelint.config.js \
     LICENSE.md LICENSE.shower_material.md README.md \
     bundled/
 # fix the library file paths in the bundle
