@@ -1,35 +1,35 @@
 /* Types */
 
-@import 'slide-list.css' screen;
-@import 'slide-full.css' screen;
+@import "slide-list.css" screen;
+@import "slide-full.css" screen;
 
 /* Content */
 
-@import 'content/basic.css';
-@import 'content/code.css';
-@import 'content/footer.css';
-@import 'content/inline.css';
-@import 'content/lists.css';
-@import 'content/quote.css';
-@import 'content/table.css';
+@import "content/basic.css";
+@import "content/code.css";
+@import "content/footer.css";
+@import "content/inline.css";
+@import "content/lists.css";
+@import "content/quote.css";
+@import "content/table.css";
 
 /* Elements */
 
-@import 'elements/columns.css';
-@import 'elements/copyright.css';
-@import 'elements/cover.css';
-@import 'elements/next.css';
-@import 'elements/place.css';
-@import 'elements/shout.css';
-@import 'elements/spotlight.css';
-@import 'elements/figure.css';
+@import "elements/columns.css";
+@import "elements/copyright.css";
+@import "elements/cover.css";
+@import "elements/next.css";
+@import "elements/place.css";
+@import "elements/shout.css";
+@import "elements/spotlight.css";
+@import "elements/figure.css";
 
 /* Modifiers */
 
-@import 'modifiers/clear.css';
-@import 'modifiers/gray.css';
-@import 'modifiers/black.css';
-@import 'modifiers/tight.css';
+@import "modifiers/clear.css";
+@import "modifiers/gray.css";
+@import "modifiers/black.css";
+@import "modifiers/tight.css";
 
 /* Slide */
 
@@ -38,9 +38,7 @@
     z-index: 0;
     overflow: hidden;
     box-sizing: border-box;
-    padding:
-        79px var(--slide-right-side)
-        0 var(--slide-left-side);
+    padding: 79px var(--slide-right-side) 0 var(--slide-left-side);
     width: var(--slide-width);
     height: var(--slide-height);
     background-color: white;

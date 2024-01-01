@@ -33,10 +33,11 @@
   "devDependencies": {
     "browser-sync": "^3.0.2",
     "gh-pages": "^6.0.0",
+    "prettier": "3.1.1",
     "stylelint": "^16.1.0"
   },
   "scripts": {
-    "test": "stylelint 'styles/**/*.css'",
+    "test": "stylelint 'styles/**/*.css' && npx prettier . --check",
     "start": "browser-sync start --server --no-notify --no-ui --no-ghost-mode --no-online --port 8080 --files 'fonts/*,pictures/*,styles/**,index.html'",
     "bundle": "./scripts/bundle.sh",
     "publish": "gh-pages -d bundled/ --dotfiles -m 'Update slides'"

@@ -3,8 +3,7 @@
 @page {
     --page-margin: 1rem;
     margin: var(--page-margin);
-    size:
-        calc(1024px + var(--page-margin) * 2)
+    size: calc(1024px + var(--page-margin) * 2)
         calc(576px + var(--page-margin) * 2);
 }
 

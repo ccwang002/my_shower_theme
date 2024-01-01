@@ -1,15 +1,10 @@
 /* Slide List */
 
 .shower.list .slide {
-    box-shadow:
-        calc(var(--slide-scale) * 4px)
-        calc(var(--slide-scale) * 4px) 0
-        calc(var(--slide-scale) * 4px)
-        var(--color-light);
+    box-shadow: calc(var(--slide-scale) * 4px) calc(var(--slide-scale) * 4px) 0
+        calc(var(--slide-scale) * 4px) var(--color-light);
     transform-origin: 0 0;
-    transform: scale(
-        var(--slide-scale)
-    );
+    transform: scale(var(--slide-scale));
 }
 
 .shower.list .slide * {
