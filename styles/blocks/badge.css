@@ -3,8 +3,12 @@
 .badge {
     align-content: center;
     justify-items: center;
-    outline: calc(var(--slide-scale) * 8px) dashed rgba(0, 0, 0, 0.2);
-    outline-offset: calc(-1 * var(--slide-scale) * 8px);
+    outline:
+        calc(var(--slide-scale) * 8px)
+        dashed rgba(0 0 0 / 20%);
+    outline-offset: calc(
+        -1 * var(--slide-scale) * 8px
+    );
     line-height: 1;
     font-size: calc(var(--slide-scale) * 48px);
 }
@@ -29,7 +33,7 @@
     margin: -1.1em 0 0 -4.5em;
     width: 4em;
     height: 4em;
-    fill: currentColor;
+    fill: currentcolor;
 }
 
 /* List */
