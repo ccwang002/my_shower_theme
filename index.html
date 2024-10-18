@@ -761,6 +761,7 @@
     &lt;script src="script.js"&gt;&lt;/script&gt;
 <mark>&lt;/head&gt;</mark></code></pre>
 		</section>
+
 		<section class="slide">
 			<h2>Numbered Code Lines</h2>
 			<pre class="nohighlight">
@@ -982,7 +983,7 @@
 				class="spotlight"
 				style="
 					--spotlight-radius: 50%;
-					--spotlight-opacity: 0.2;
+					--spotlight-opacity: 20%;
 					--spotlight-size: 256px;
 					--spotlight-top: 70px;
 					--spotlight-left: 280px;
@@ -1006,7 +1007,7 @@
 				class="spotlight"
 				style="
 					--spotlight-radius: 0;
-					--spotlight-opacity: 0.2;
+					--spotlight-opacity: 20%;
 					--spotlight-width: 1024px;
 					--spotlight-height: 48px;
 					--spotlight-top: 37px;
@@ -1188,6 +1189,28 @@ def order(request):
 						{ left: "\\(", right: "\\)", display: false },
 						{ left: "\\[", right: "\\]", display: true },
 					],
+				});
+
+				// Expand all <details> elements when printing
+				// ref: https://stackoverflow.com/a/75260733
+				window.matchMedia("print").addEventListener("change", (evt) => {
+					if (evt.matches) {
+						elms = document.body.querySelectorAll(
+							"details:not([open])",
+						);
+						for (e of elms) {
+							e.setAttribute("open", "");
+							e.dataset.wasclosed = "";
+						}
+					} else {
+						elms = document.body.querySelectorAll(
+							"details[data-wasclosed]",
+						);
+						for (e of elms) {
+							e.removeAttribute("open");
+							delete e.dataset.wasclosed;
+						}
+					}
 				});
 			});
 		</script>

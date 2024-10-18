@@ -3,7 +3,7 @@
 :is(.slide, .slide-notes) a {
     background-image: linear-gradient(
         to top,
-        currentColor 0.08em,
+        currentcolor 0.08em,
         transparent 0.08em
     );
     background-repeat: repeat-x;
