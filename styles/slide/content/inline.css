@@ -1,12 +1,11 @@
 /* Inline */
 
 :is(.slide, .slide-notes) a {
-    background-image:
-        linear-gradient(
-            to top,
-            currentcolor 0.08em,
-            transparent 0.08em
-        );
+    background-image: linear-gradient(
+        to top,
+        currentcolor 0.08em,
+        transparent 0.08em
+    );
     background-repeat: repeat-x;
     color: var(--color-key);
     text-decoration: none;

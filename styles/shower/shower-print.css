@@ -3,9 +3,7 @@
 @page {
     /* Size need to consider the page margin */
     margin: 16px;
-    size:
-        calc(1024px + 16px * 2)
-        calc(576px + 16px * 2);
+    size: calc(1024px + 16px * 2) calc(576px + 16px * 2);
 }
 
 .shower {
