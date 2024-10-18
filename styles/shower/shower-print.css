@@ -1,10 +1,11 @@
 /* Print */
 
 @page {
-    --page-margin: 1rem;
-    margin: var(--page-margin);
-    size: calc(1024px + var(--page-margin) * 2)
-        calc(576px + var(--page-margin) * 2);
+    /* Size need to consider the page margin */
+    margin: 16px;
+    size:
+        calc(1024px + 16px * 2)
+        calc(576px + 16px * 2);
 }
 
 .shower {
