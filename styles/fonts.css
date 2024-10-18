@@ -7,9 +7,10 @@
     font-stretch: normal;
     src:
         local("Source Sans 3 VF"),
-        url("../fonts/source-sans/SourceSans3VF-Roman.ttf.woff2")
+        url("../fonts/source-sans/SourceSans3VF-Upright.otf.woff2")
             format("woff2"),
-        url("../fonts/source-sans/SourceSans3VF-Roman.ttf.woff") format("woff");
+        url("../fonts/source-sans/SourceSans3VF-Upright.otf.woff")
+            format("woff");
 }
 
 @font-face {
@@ -20,9 +21,9 @@
     font-display: fallback;
     src:
         local("Source Sans 3 VF"),
-        url("../fonts/source-sans/SourceSans3VF-Italic.ttf.woff2")
+        url("../fonts/source-sans/SourceSans3VF-Italic.otf.woff2")
             format("woff2-variations"),
-        url("../fonts/source-sans/SourceSans3VF-Italic.ttf.woff")
+        url("../fonts/source-sans/SourceSans3VF-Italic.otf.woff")
             format("woff-variations");
 }
 
