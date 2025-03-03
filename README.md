@@ -52,13 +52,13 @@ It directly modifies the official [Material][Material theme] theme ([the origina
 
 The theme builds on the following packages and resources:
 
--   Shower's official theme, [Material][Material theme], [MIT License][Material license]
--   [Shower]: HTML5 presentation framework by Vadim Makeev _et al._, MIT license
--   [highlight.js]: Code highlighting library by Ivan Sagalaev _et al._, MIT license
--   [KaTeX]: LaTeX math rendering, MIT license
--   Fonts:
-    -   [Source Sans], SIL Open Font License 1.1
-    -   [Fira Code], SIL Open Font License 1.1
+- Shower's official theme, [Material][Material theme], [MIT License][Material license]
+- [Shower]: HTML5 presentation framework by Vadim Makeev _et al._, MIT license
+- [highlight.js]: Code highlighting library by Ivan Sagalaev _et al._, MIT license
+- [KaTeX]: LaTeX math rendering, MIT license
+- Fonts:
+    - [Source Sans], SIL Open Font License 1.1
+    - [Fira Code], SIL Open Font License 1.1
 
 [Material license]: LICENSE.shower_material.md
 [shower]: https://github.com/shower/shower
